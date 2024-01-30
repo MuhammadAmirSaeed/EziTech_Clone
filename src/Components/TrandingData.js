@@ -12,7 +12,6 @@ import Ios from "../Images/IOS&AND.png";
 import Marketing from "../Images/Marketing.png";
 import ThreeD from "../Images/3d.png";
 import Animation from "../Images/animation.png";
-
 const TrandingData = () => {
   const ml = {
     imageUrl: mL,
@@ -65,19 +64,31 @@ const TrandingData = () => {
   };
 
   return (
-    <div>
-      <TrandingTechnologies {...ml} />;
-      <TrandingTechnologies {...blockChain} />;
-      <TrandingTechnologies {...amazon} />;
-      <TrandingTechnologies {...cyberSecurity} />;
-      <TrandingTechnologies {...development} />;
-      <TrandingTechnologies {...design} />;
-      <TrandingTechnologies {...gaming} />;
-      <TrandingTechnologies {...architecture} />;
-      <TrandingTechnologies {...ios} />;
-      <TrandingTechnologies {...marketing} />;
-      <TrandingTechnologies {...threeD} />;
-      <TrandingTechnologies {...animation} />;
+    <div className="">
+      <div className="text-center my-10 mx-40">
+        <h1 className=" font-montserrat text-5xl  ">
+          What new trends and technology will you discover?
+        </h1>
+        <h4 className="font-montserrat pt-10 text-slate-700">
+          Today's technology is developing quickly, and our new technological
+          trends are enabling and advancing, speeding up the pace of
+          development.
+        </h4>
+      </div>
+      <div className="flex flex-wrap gap-4  items-center text-center">
+        <TrandingTechnologies {...ml} />
+        <TrandingTechnologies {...blockChain} />
+        <TrandingTechnologies {...amazon} />
+        <TrandingTechnologies {...cyberSecurity} />
+        <TrandingTechnologies {...development} />
+        <TrandingTechnologies {...design} />
+        <TrandingTechnologies {...gaming} />
+        <TrandingTechnologies {...architecture} />
+        <TrandingTechnologies {...ios} />
+        <TrandingTechnologies {...marketing} />
+        <TrandingTechnologies {...threeD} />
+        <TrandingTechnologies {...animation} />
+      </div>
     </div>
   );
 };

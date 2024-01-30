@@ -27,9 +27,12 @@ const WorkData = () => {
 
   return (
     <div>
-      <HowItwork {...signUpData} />
-      <HowItwork {...selectCourse} />
-      <HowItwork {...startLearning} />
+      <div className=" font-montserrat text-3xl text-center">How it Work?</div>
+      <div className=" flex flex-row gap-2">
+        <HowItwork {...signUpData} />
+        <HowItwork {...selectCourse} />
+        <HowItwork {...startLearning} />
+      </div>
     </div>
   );
 };

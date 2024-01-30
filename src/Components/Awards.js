@@ -3,11 +3,14 @@ import ImageWithPresident from "../Images/Pic With President.png";
 
 const Awards = () => {
   return (
-    <div className=" mt-4  text-center">
-      Best IT Services Award 2023
-      <div className="flex flex-row  gap-20">
-        <div>
-          <img src={ImageWithPresident} alter="image" className="w-96 h-40" />
+    <>
+      <div className=" mt-10 mb-10  text-center font-montserrat font-bold text-3xl">
+        Best IT Services Award 2023
+      </div>
+
+      <div className="  gap-10 flex flex-row">
+        <div class="  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+          <img src={ImageWithPresident} alter="image" className="w-50 h-96" />
         </div>
         <div className="mb-4">
           <span className="font-bold">Ezitech Is affiliated With</span>
@@ -41,8 +44,13 @@ const Awards = () => {
           </div>
         </div>
       </div>
-      <button className="bg-blue-700">Eziline Profile</button>
-    </div>
+
+      <div className="mt-10 mb-10 text-center">
+        <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+          Eziline Profile
+        </button>
+      </div>
+    </>
   );
 };
 

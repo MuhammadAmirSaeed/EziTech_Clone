@@ -5,16 +5,20 @@ import Awards from "./Components/Awards";
 
 import WorkData from "./Components/WorkData";
 import TrandingData from "./Components/TrandingData";
-import RecommendedCourses from "./Components/RecommendedCourses";
+
+import CoursesCard from "./Components/CoursesCard";
+import RecommendedCourse from "./Components/RecommendedCourses";
+import Jobs from "./Components/Jobs";
 const App = () => {
   return (
-    <div className=" ">
+    <div className="">
       <TopHeader />
       <NavBar />
       <Awards />
       <WorkData />
       <TrandingData />
-      <RecommendedCourses />
+      <RecommendedCourse />
+      <Jobs />
     </div>
   );
 };

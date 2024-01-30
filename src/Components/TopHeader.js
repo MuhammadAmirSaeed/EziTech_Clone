@@ -12,24 +12,20 @@ import Register from "../Pages/Register";
 
 function TopHeader() {
   return (
-    <div
-      className="bg-blue-500 text-xs  gap-2 text-white py-2 flex flex-row text-center pl-60
-    "
-    >
-      <div>
+    <div className="font-popines bg-blue-500 text-xs gap-2 text-white py-2 flex flex-row justify-between text-center pl-40 ">
+      <div className="font-popines">
         <CallIcon />
         +92 3455555396
       </div>
-      <div classNam="">
+      <div className="font-popines ">
         <LocationOnIcon />
         Office #304-B Amna Plaza, Rawalpindi, Pakistan
       </div>
-
-      <div>
+      <div className="font-popines ">
         <AccessTimeIcon />
         Mon - Fri 8.00 - 20.00
       </div>
-      <div className="flex flex-row gap-3 test-xs pl-9">
+      <div className="flex flex-row gap-3 text-xs pl-9 font-popines transform scale-75">
         <a href="https://www.facebook.com">
           <FacebookOutlinedIcon />
         </a>
@@ -43,13 +39,14 @@ function TopHeader() {
           <LinkedInIcon />
         </a>
         <a href="https://www.youtube.com">
-          <FaYoutube fontSize={"20px"} />
+          <FaYoutube fontSize={"17px"} />
         </a>
       </div>
-
-      <div className=" font-serif  text-base ml-auto pr-4">
-        <button onClick={<Login />}>Login</button>|
-        <button onClick={<Register />}>Register</button>
+      <div className=" text-xs font-popines mr-2 ">
+        <button onClick={() => console.log("Login clicked")}>Login</button>|
+        <button onClick={() => console.log("Register clicked")}>
+          Register
+        </button>
       </div>
     </div>
   );
