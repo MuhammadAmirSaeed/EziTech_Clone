@@ -1,34 +1,73 @@
 import React from "react";
-import { BsPersonSquare } from "react-icons/bs";
+import JS from "../Images/icon-js.png";
+import { BsFilePerson, BsPersonSquare } from "react-icons/bs";
 import { TbLocationFilled } from "react-icons/tb";
 import { FaShoppingBag } from "react-icons/fa";
 
 const Jobs = () => {
+  // const cardStyle = {
+  //   backgroundImage: `url('../Images/coding.jpg')`, // Check the image path
+  // };
+
   const cardStyle = {
-    backgroundImage: `url('../Images/coding.jpg')`, // Check the image path
+    backgroundImage: `url(${require("../Images/coding.jpg")})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundBlendMode: "multiply",
   };
 
   return (
-    <div>
-      <div
-        className="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg dark:bg-neutral-700"
-        style={cardStyle}
-      >
-        <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white dark:text-neutral-50">
-          Card title
-        </h5>
-        <p className="mb-4 text-base text-neutral-600 text-white dark:text-neutral-200">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <button
-          type="button"
-          className="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-          data-te-ripple-init
-        >
-          Button
-        </button>
+    <div className=" max-w-xs overflow-hidden rounded shadow-lg">
+      {/* <!-- component --> */}
+      <div className="w-screen h-screen bg-white flex flex-col flex-wrap  ">
+        <div className=" ">
+          {/* <!-- Profile Card --> */}
+          <div
+            className=" shadow-lg bg-blue-800 w-full flex flex-row flex-wrap p-3 antialiased"
+            style={cardStyle}
+          >
+            <div className="gap-3 flex flex-row">
+              <div>
+                <h1 className="text-white font-montserrat font-bold ">
+                  Backend Developer
+                </h1>
+                <hr className="font-bold my-1" />
+                <h4 className="text-white">EZITECH</h4>
+              </div>
+              <div className="md:w-1/3 w-20">
+                <img
+                  className="rounded-lg shadow-lg antialiased w-20 "
+                  src={JS}
+                  alt="profile"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* my card item */}
+        <div className="flex flex-row mt-10 gap-3 text-center font-montserrat mx-3">
+          <BsFilePerson className="bg-slate-200  text-blue-700 mt-1" />{" "}
+          <span className=" text-base"> Employment-</span>
+          <span className=" bg-slate-100 px-2 rounded-md text-slate-500">
+            Hybrid
+          </span>
+        </div>
+        <div className="flex flex-row mt-10 gap-3 text-center font-montserrat mx-3">
+          <BsFilePerson className="bg-slate-200  text-blue-700 mt-1" />{" "}
+          <span className=" text-base"> Employment-</span>
+          <span className=" bg-slate-100 px-2 rounded-md text-slate-500">
+            Hybrid
+          </span>
+        </div>
+        <div className="flex flex-row mt-10 gap-3 text-center font-montserrat mx-3">
+          <BsFilePerson className="bg-slate-200  text-blue-700 mt-1" />{" "}
+          <span className=" text-base"> Employment-</span>
+          <span className=" bg-slate-100 px-2 rounded-md text-slate-500">
+            Hybrid
+          </span>
+        </div>
       </div>
+      {/* <!-- End Profile Card --> */}
     </div>
   );
 };

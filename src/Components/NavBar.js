@@ -40,7 +40,7 @@ const NavBar = () => {
     <div
       className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
       style={{
-        backgroundImage: "url('../Images/nav image.jpg')",
+        backgroundImage: `url(${require("../Images/nav image.jpg")})`,
         height: "400px",
       }}
     >
